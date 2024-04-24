@@ -1,28 +1,28 @@
 {
-  "compilerOptions": {
-    "target": "ES6",
-    "useDefineForClassFields": true,
-    "lib": ["ES6", "DOM", "DOM.Iterable"],
-    "module": "ES6",
-    "skipLibCheck": true,
-    "esModuleInterop": true,
+	"compilerOptions": {
+		"target": "ES6",
+		"useDefineForClassFields": true,
+		"lib": ["ES6", "DOM", "DOM.Iterable"],
+		"module": "esnext",
+		"skipLibCheck": true,
+		"esModuleInterop": true,
 
-    /* Bundler mode */
-    "moduleResolution": "Bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-    "outDir": "dist",
+		/* Bundler mode */
+		"moduleResolution": "Bundler",
+		"allowImportingTsExtensions": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		"jsx": "react-jsx",
+		"outDir": "dist",
 
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-  },
-  "include": ["src/*", "src/**/*", "server/*", "server/**/*"],
-  "exclude": ["vite-env.d.ts"],
-  "references": [{ "path": "./tsconfig.node.json"}]
+		/* Linting */
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true
+	},
+	"include": ["src/*", "src/**/*", "server/*", "server/**/*"],
+	"exclude": ["vite-env.d.ts"],
+	"references": [{ "path": "./tsconfig.node.json" }]
 }
