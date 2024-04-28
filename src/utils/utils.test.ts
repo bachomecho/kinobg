@@ -1,21 +1,13 @@
 import { modalTitle } from "./utils";
 
 describe("modalTitle", () => {
-	it("should return the correct marginMid value when title length is greater than or equal to midLength", () => {
-		const title = "Време разделно";
-		const midLength = 11;
-		const marginMid = 14;
-		const expected = 13;
-		const result = modalTitle(title, midLength, marginMid);
-		expect(result).toEqual(expected);
+	it("should return the correct result when title length is greater than or equal to midLength", () => {
+		expect(modalTitle("Крадецът на праскови")).toBe(10);
+		expect(modalTitle("Момчето си отива")).toBe(12);
 	});
 
-	it("should return the correct marginMid value when title length is less than midLength", () => {
-		const title = "Козият рог";
-		const midLength = 11;
-		const marginMid = 14;
-		const expected = 15;
-		const result = modalTitle(title, midLength, marginMid);
-		expect(result).toEqual(expected);
+	it("should return the correct result when title length is less than midLength", () => {
+		expect(modalTitle("Двойникът")).toBe(15);
+		expect(modalTitle("Любимец 13")).toBe(15);
 	});
 });
